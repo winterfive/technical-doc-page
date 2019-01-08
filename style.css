@@ -4,6 +4,10 @@
   --nav-bg-color: #02305c;
 }
 
+html {
+  font-family: sans-serif;
+}
+
 #base-div {
   max-width: 1800px;
   overflow-x: hidden;
@@ -52,7 +56,8 @@ a:hover {
   text-decoration: none;
 }
 
-.top-link, #top-anchor {
+.top-link,
+#top-anchor {
   display: none;
 }
 
@@ -76,6 +81,15 @@ header {
   padding: 1em 0 1em 2em;
 }
 
+pre {
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word;
+  padding-right: 5px;
+}
+
 @media screen and (max-width: 730px) {
   .fixed-position {
     position: relative;
@@ -83,30 +97,31 @@ header {
     top: 0px;
     height: 180px;
   }
-  
+
   #navbar {
-  width: 100%;
-  background: var(--nav-bg-color);
-  color: #fff;
-  line-height: 1.6em;
-  padding: 2em 2em 2em 2em;
-  height: 210px;
-  margin: -10px 0 0 -10px;
-  }  
-  
-  .main-section {
-  padding: 30px 20px 30px 20px;
+    width: 100%;
+    background: var(--nav-bg-color);
+    color: #fff;
+    line-height: 1.6em;
+    padding: 2em 2em 2em 2em;
+    height: 210px;
+    margin: -10px 0 0 -10px;
   }
 
-  p, .list-box {
+  .main-section {
+    padding: 30px 20px 30px 20px;
+  }
+
+  p,
+  .list-box {
     font-size: 0.8em;
   }
-  
+
   #top-anchor {
     display: block;
     width: 100%;
   }
-  
+
   .top-link {
     display: block;
     width: 100%;
