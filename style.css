@@ -1,0 +1,115 @@
+:root {
+  --code-bg-color: #ececec;
+  --list-font-color: #0357a6;
+  --nav-bg-color: #02305c;
+}
+
+#base-div {
+  max-width: 1800px;
+  overflow-x: hidden;
+}
+
+#main-doc {
+  line-height: 1.4em;
+  width: 100%;
+}
+
+#navbar {
+  width: 200px;
+  background: var(--nav-bg-color);
+  color: #fff;
+  line-height: 1.6em;
+  padding: 2em 2em 2em 2em;
+  height: 100%;
+}
+
+.fixed-position {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.nav-link {
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: var(--nav-bg-color);
+  background-color: #fff;
+  padding: 2px 2px 2px 2px;
+}
+
+a {
+  color: var(--list-font-color);
+}
+
+a:hover {
+  color: #fff;
+  background-color: var(--nav-bg-color);
+  padding: 2px 0px 2px 0px;
+  text-decoration: none;
+}
+
+.top-link, #top-anchor {
+  display: none;
+}
+
+.main-section {
+  padding-left: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+
+header {
+  font-weight: bold;
+}
+
+.list-box {
+  color: var(--list-font-color);
+}
+
+.code-box {
+  background-color: var(--code-bg-color);
+  padding: 1em 0 1em 2em;
+}
+
+@media screen and (max-width: 730px) {
+  .fixed-position {
+    position: relative;
+    z-index: 1;
+    top: 0px;
+    height: 180px;
+  }
+  
+  #navbar {
+  width: 100%;
+  background: var(--nav-bg-color);
+  color: #fff;
+  line-height: 1.6em;
+  padding: 2em 2em 2em 2em;
+  height: 210px;
+  margin: -10px 0 0 -10px;
+  }  
+  
+  .main-section {
+  padding: 30px 20px 30px 20px;
+  }
+
+  p, .list-box {
+    font-size: 0.8em;
+  }
+  
+  #top-anchor {
+    display: block;
+    width: 100%;
+  }
+  
+  .top-link {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+  }
+}
